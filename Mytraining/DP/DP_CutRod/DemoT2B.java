@@ -1,3 +1,4 @@
+package DP_CutRod;
 
 public class DemoT2B {
 
@@ -13,7 +14,7 @@ public class DemoT2B {
 		else {
 			q = Integer.MIN_VALUE;
 			for(int i = 1; i<= n; i++) {
-				q = DemoCutRod.max(q, price[i] + aux(n-i));
+				q = utils.compare.max(q, price[i] + aux(n-i));
 			}
 			r[n] = q;
 		}

@@ -43,7 +43,6 @@ public class Demo {
 	        }
 	    }
 
-	    // write your code here
 	    public static Map<String, Integer> resolve(List<Integer> order, Map<String, List<Integer>> boms) {
 	    	Map<String, Integer> res = new HashMap<String, Integer>();
 	    	

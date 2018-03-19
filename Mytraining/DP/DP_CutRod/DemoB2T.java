@@ -1,3 +1,4 @@
+package DP_CutRod;
 
 public class DemoB2T {
 
@@ -14,7 +15,7 @@ public class DemoB2T {
 			for(int j = 1; j <= n; j++) {
 				int q = Integer.MIN_VALUE;
 				for(int i = 1; i <= j; i++)
-					q = DemoCutRod.max(q, price[i] + r[j-i]);
+					q = utils.compare.max(q, price[i] + r[j-i]);
 				r[j] = q;
 			}
 			System.out.println("n = " + n + "\tr = " + r[n]);
