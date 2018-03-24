@@ -7,7 +7,7 @@ public class DemoCutRod {
 		}
 		int q = Integer.MIN_VALUE;
 		for(int i = 1;  i <= n; i++) {
-			q = utils.compare.max(q, price[i] + Cut(n-i));
+			q = utils.MyComparator.GetMax(q, price[i] + Cut(n-i));
 		}
 		return q;
 	}

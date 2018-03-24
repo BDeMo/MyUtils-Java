@@ -50,7 +50,7 @@ public class DemoComplete {
 				|| c <= 0
 				|| items.get(n - 1)[0] > c)
 			return 0;
-		int res = utils.compare.max(items.get(n-1)[1] + solve(items, n, c - items.get(n-1)[0]),
+		int res = utils.MyComparator.GetMax(items.get(n-1)[1] + solve(items, n, c - items.get(n-1)[0]),
 				solve(items, n-1, c));
 		System.out.println(res+","+n+","+c);
 		return res;

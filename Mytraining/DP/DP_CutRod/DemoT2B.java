@@ -14,7 +14,7 @@ public class DemoT2B {
 		else {
 			q = Integer.MIN_VALUE;
 			for(int i = 1; i<= n; i++) {
-				q = utils.compare.max(q, price[i] + aux(n-i));
+				q = utils.MyComparator.GetMax(q, price[i] + aux(n-i));
 			}
 			r[n] = q;
 		}
