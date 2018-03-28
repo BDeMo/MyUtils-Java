@@ -18,10 +18,10 @@ class ThreadDemo implements Runnable {
     public void run() {  
         for (int i = 0; i < 5; i++) {  
             if (i == 3) {  
-                System.out.println("当前的线程是     " + Thread.currentThread().getName());  
+                System.out.println("current thread :" + Thread.currentThread().getName());
                 Thread.currentThread().yield();  
             }  
-            System.out.println("执行的是    " + Thread.currentThread().getName());  
+            System.out.println("executing thread :" + Thread.currentThread().getName());
         }
   
     }
