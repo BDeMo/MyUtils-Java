@@ -1,6 +1,5 @@
 package Mytraining.Lambda.Demo;
 
-import java.net.SocketPermission;
 import java.util.Arrays;
 import java.util.List;
 
